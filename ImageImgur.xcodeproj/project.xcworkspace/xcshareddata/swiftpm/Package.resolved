@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "MySPM",
+        "repositoryURL": "https://github.com/asfcarvalho/MySPM",
+        "state": {
+          "branch": "master",
+          "revision": "db7fcaa46cede2ffb908467ddb5574aa4cd90d45",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
