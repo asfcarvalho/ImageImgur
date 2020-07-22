@@ -6,7 +6,7 @@
 //  Copyright © 2020 asfcarvalho. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class ImageListViewModel {
     var imageList: [Image] = []
@@ -21,9 +21,7 @@ class ImageListViewModel {
         
         imageDataList.forEach { imageData in
             if let images = imageData.images {
-                images.forEach {
-                    imageList.append(Image(imageUrl: $0.link, title: $0.title))
-                }
+                imageList.append(Image(imageUrl: images.first?.link, title: images.first?.title))
             }
         }
     }
@@ -45,5 +43,23 @@ class ImageListViewModel {
     
     func getNumberOfRows() -> Int {
         return imageList.count
+    }
+    
+    func getImageSize(_ collectionView: UICollectionView) -> CGSize {
+        let orientation = UIApplication.shared.statusBarOrientation
+        if(orientation == .landscapeLeft || orientation == .landscapeRight) {
+            if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.pad {
+                return CGSize(width: (collectionView.frame.size.width-24)/4, height: (collectionView.frame.size.height-8) * 0.55)
+            } else {
+                return CGSize(width: (collectionView.frame.size.width-24)/4, height: (collectionView.frame.size.height-8) * 0.60)
+            }
+        }
+        else {
+            if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.pad {
+                return CGSize(width: (collectionView.frame.size.width-16)/3, height: (collectionView.frame.size.height-8)/3)
+            } else {
+                return CGSize(width: (collectionView.frame.size.width-8)/2, height: (collectionView.frame.size.height-8)/3)
+            }
+        }
     }
 }

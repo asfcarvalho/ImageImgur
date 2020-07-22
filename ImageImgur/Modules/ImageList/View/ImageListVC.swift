@@ -9,19 +9,24 @@
 import UIKit
 import MySPM
 
+typealias RowCell = (IndexPath) -> UICollectionViewCell
+
+struct Section {
+    var rows: [RowCell]
+}
+
 class ImageListVC: UIViewController {
     
     private let imageListViewModel = ImageListViewModel()
     private let cellName = "cell"
+    private let cellWidth = (UIScreen.main.bounds.width * 0.5)
     
     private lazy var collectionView: UICollectionView = {
         let layoutCollection = UICollectionViewFlowLayout()
         layoutCollection.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-        let viewWidth = view.frame.width / 2 - 18
-        layoutCollection.itemSize = CGSize(width: viewWidth , height: viewWidth)
-        layoutCollection.minimumInteritemSpacing = 4
-        layoutCollection.minimumLineSpacing = 4
-        let collection = UICollectionView(frame: CGRect.zero, collectionViewLayout: layoutCollection)
+        layoutCollection.minimumInteritemSpacing = 8
+        layoutCollection.minimumLineSpacing = 8
+        let collection = UICollectionView(frame: UIScreen.main.bounds, collectionViewLayout: layoutCollection)
         return collection
     }()
 
@@ -34,8 +39,17 @@ class ImageListVC: UIViewController {
         fetchData()
     }
     
+    private func setupCollectionView() {
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        collectionView.register(ImageListCell.self, forCellWithReuseIdentifier: cellName)
+    }
+    
     private func setupView() {
-        view.backgroundColor = .red
+        view.backgroundColor = .white
+        collectionView.backgroundColor = .clear
+        
+        setupCollectionView()
         
         view.AddSubviews([collectionView])
         
@@ -43,7 +57,11 @@ class ImageListVC: UIViewController {
     }
     
     private func setupAnchors() {
-        collectionView.EdgeToSuperView()
+        collectionView
+            .TopToSuperview(margin: 16)
+            .LeadingToSuperview(margin: 16)
+            .TrailingToSuperview(margin: 16)
+            .BottomToSuperview(margin: 16)
     }
     
     private func fetchData() {
@@ -57,6 +75,12 @@ class ImageListVC: UIViewController {
             }
         }
     }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        DispatchQueue.main.async {
+            self.collectionView.reloadData()
+        }
+    }
 }
 
 extension ImageListVC: UICollectionViewDataSource, UICollectionViewDelegate {
@@ -66,14 +90,22 @@ extension ImageListVC: UICollectionViewDataSource, UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     
-        guard let coll = collectionView.dequeueReusableCell(withReuseIdentifier: cellName, for: indexPath) as? UICollectionViewCell else {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellName, for: indexPath) as? ImageListCell else {
             return UICollectionViewCell()
         }
         
-//        let gallery = galleryViewModel?.gallery[indexPath.row]
-//
-//        coll.setupCell(searchText, gallery?.id ?? "", gallery?.imageData)
+        cell.awakeFromNib()
+        cell.setupCell(imageListViewModel.imageList[indexPath.row].imageUrl)
         
-        return coll
+        return cell
+    }
+}
+
+extension ImageListVC: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAt indexPath: IndexPath) -> CGSize {
+
+        return imageListViewModel.getImageSize(collectionView)
     }
 }

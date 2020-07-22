@@ -39,161 +39,97 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "52195E35-4C15-4DF5-B6C6-A1DA1009210D"
-            shouldBeEnabled = "Yes"
+            uuid = "B99FA670-F44D-4692-A60C-738C1B2C3574"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ImageImgur/Modules/ImageList/ViewModel/ImageListViewModel.swift"
+            filePath = "../../Library/Developer/Xcode/DerivedData/ImageImgur-dklszvagucnxqvfqptjplwfvvvif/SourcePackages/checkouts/MySPM/Sources/MySPM/UIImageView+Extensions.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "fetchData(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "52195E35-4C15-4DF5-B6C6-A1DA1009210D - 73106c1f5e8fecd4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;ImageImgur.ImageDataList, Swift.Error&gt;) -&gt; () in ImageImgur.ImageListViewModel.fetchData((Swift.Bool) -&gt; ()) -&gt; ()"
-                  moduleName = "ImageImgur"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/andersonfcarvalho/Projects/ImageImgur/ImageImgur/Modules/ImageList/ViewModel/ImageListViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34"
-                  offsetFromSymbolStart = "441">
-               </Location>
-               <Location
-                  uuid = "52195E35-4C15-4DF5-B6C6-A1DA1009210D - 73106c1f5e8fecd4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;ImageImgur.ImageDataList, Swift.Error&gt;) -&gt; () in ImageImgur.ImageListViewModel.fetchData((Swift.Bool) -&gt; ()) -&gt; ()"
-                  moduleName = "ImageImgur"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/andersonfcarvalho/Projects/ImageImgur/ImageImgur/Modules/ImageList/ViewModel/ImageListViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34"
-                  offsetFromSymbolStart = "488">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "FA34FA0E-7F86-4ED4-919E-C5F55CA94B66"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ImageImgur/BaseDataSource/APICalling.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "fetch(apiRequest:callBack:)"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "loadImageWith(url:placeholderImage:loadCacheEnabled:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "7E9C2C84-88FA-4F4B-926B-D7C8032600A9"
-            shouldBeEnabled = "Yes"
+            uuid = "34CEE71E-EBA4-4AD5-9225-15978090DFEB"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ImageImgur/Modules/ImageList/View/ImageListVC.swift"
+            filePath = "../../Library/Developer/Xcode/DerivedData/ImageImgur-dklszvagucnxqvfqptjplwfvvvif/SourcePackages/checkouts/MySPM/Sources/MySPM/UIImageView+Extensions.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "loadCache(url:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "F69A14E2-C8B6-4DD8-9C1B-F79B0DC65E64"
+            uuid = "83C5940C-6480-4503-B012-796DCC64E008"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ImageImgur/Modules/ImageList/View/ImageListVC.swift"
+            filePath = "ImageImgur/Image+teste.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "fetchData()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "F69A14E2-C8B6-4DD8-9C1B-F79B0DC65E64 - ce74f30718922f7a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ImageImgur.ImageListVC.(fetchData in _EBDDE426335F5ED93293FFF3CDEE8547)() -&gt; ()"
-                  moduleName = "ImageImgur"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/andersonfcarvalho/Projects/ImageImgur/ImageImgur/Modules/ImageList/View/ImageListVC.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "50"
-                  endingLineNumber = "50"
-                  offsetFromSymbolStart = "22">
-               </Location>
-               <Location
-                  uuid = "F69A14E2-C8B6-4DD8-9C1B-F79B0DC65E64 - f492ff01757983bc"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Bool) -&gt; () in ImageImgur.ImageListVC.(fetchData in _EBDDE426335F5ED93293FFF3CDEE8547)() -&gt; ()"
-                  moduleName = "ImageImgur"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/andersonfcarvalho/Projects/ImageImgur/ImageImgur/Modules/ImageList/View/ImageListVC.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "50"
-                  endingLineNumber = "50"
-                  offsetFromSymbolStart = "149">
-               </Location>
-            </Locations>
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "D76B7C8E-3B31-446F-AC84-10656428469D"
+            uuid = "1B2D21A6-9E9D-4DE0-89B3-A1633A7BE283"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ImageImgur/Resources/AppDelegate.swift"
+            filePath = "ImageImgur/Image+teste.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "loadImageWithTest(url:placeholderImage:loadCacheEnabled:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "97AB40F1-5346-49B9-BCA7-00C023442EB1"
+            uuid = "B2B0754B-9412-4951-AFE7-AAEC58FBD31F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ImageImgur/ImageTest.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "startDownload(imageUrl:placeholderImage:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "49660375-57A4-4BEA-83B9-046BCF7868D6"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ImageImgur/Resources/SceneDelegate.swift"
+            filePath = "ImageImgur/ImageTest.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "scene(_:willConnectTo:options:)"
-            landmarkType = "7">
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "bgSession"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

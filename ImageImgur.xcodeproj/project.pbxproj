@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1951EA3424C6408600D17A15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1951EA3324C6408600D17A15 /* AppDelegate.swift */; };
-		1951EA3624C6408600D17A15 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1951EA3524C6408600D17A15 /* SceneDelegate.swift */; };
 		1951EA3824C6408600D17A15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1951EA3724C6408600D17A15 /* ViewController.swift */; };
 		1951EA3B24C6408600D17A15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1951EA3924C6408600D17A15 /* Main.storyboard */; };
 		1951EA3D24C6408800D17A15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1951EA3C24C6408800D17A15 /* Assets.xcassets */; };
@@ -19,11 +18,13 @@
 		1951EA5F24C6432B00D17A15 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1951EA5E24C6432B00D17A15 /* Image.swift */; };
 		1951EA6224C6436400D17A15 /* APICalling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1951EA6124C6436300D17A15 /* APICalling.swift */; };
 		1951EA6424C6437E00D17A15 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1951EA6324C6437E00D17A15 /* APIRequest.swift */; };
-		1951EA6C24C6457C00D17A15 /* MySPM in Frameworks */ = {isa = PBXBuildFile; productRef = 1951EA6B24C6457C00D17A15 /* MySPM */; };
 		1951EA7124C711A200D17A15 /* ImageListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1951EA7024C711A200D17A15 /* ImageListViewModel.swift */; };
 		1951EA7424C7169B00D17A15 /* ImageListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1951EA7324C7169B00D17A15 /* ImageListDataSource.swift */; };
 		1951EA7624C72A5A00D17A15 /* APIStringsDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1951EA7524C72A5A00D17A15 /* APIStringsDefault.swift */; };
 		1951EA7824C7323B00D17A15 /* ImageDataList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1951EA7724C7323B00D17A15 /* ImageDataList.swift */; };
+		1951EA7D24C7807300D17A15 /* ImageListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1951EA7C24C7807300D17A15 /* ImageListCell.swift */; };
+		1951EA8224C85C4400D17A15 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 1951EA8124C85C4400D17A15 /* Nuke */; };
+		1951EA8424C891BF00D17A15 /* UIView+constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1951EA8324C891BF00D17A15 /* UIView+constraint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,6 @@
 /* Begin PBXFileReference section */
 		1951EA3024C6408600D17A15 /* ImageImgur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageImgur.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1951EA3324C6408600D17A15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1951EA3524C6408600D17A15 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1951EA3724C6408600D17A15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1951EA3A24C6408600D17A15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1951EA3C24C6408800D17A15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,6 +57,8 @@
 		1951EA7324C7169B00D17A15 /* ImageListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListDataSource.swift; sourceTree = "<group>"; };
 		1951EA7524C72A5A00D17A15 /* APIStringsDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIStringsDefault.swift; sourceTree = "<group>"; };
 		1951EA7724C7323B00D17A15 /* ImageDataList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDataList.swift; sourceTree = "<group>"; };
+		1951EA7C24C7807300D17A15 /* ImageListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListCell.swift; sourceTree = "<group>"; };
+		1951EA8324C891BF00D17A15 /* UIView+constraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+constraint.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1951EA6C24C6457C00D17A15 /* MySPM in Frameworks */,
+				1951EA8224C85C4400D17A15 /* Nuke in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +101,7 @@
 		1951EA3224C6408600D17A15 /* ImageImgur */ = {
 			isa = PBXGroup;
 			children = (
+				1951EA8524C891CF00D17A15 /* Utils */,
 				1951EA6024C6433A00D17A15 /* BaseDataSource */,
 				1951EA5B24C642F400D17A15 /* Model */,
 				1951EA5A24C642BA00D17A15 /* Resources */,
@@ -140,6 +143,7 @@
 		1951EA5724C640D100D17A15 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1951EA7B24C7805100D17A15 /* Cell */,
 				1951EA5824C6411B00D17A15 /* ImageListVC.swift */,
 			);
 			path = View;
@@ -150,7 +154,6 @@
 			children = (
 				1951EA4124C6408800D17A15 /* Info.plist */,
 				1951EA3324C6408600D17A15 /* AppDelegate.swift */,
-				1951EA3524C6408600D17A15 /* SceneDelegate.swift */,
 				1951EA3C24C6408800D17A15 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -192,6 +195,22 @@
 			path = DataSource;
 			sourceTree = "<group>";
 		};
+		1951EA7B24C7805100D17A15 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1951EA7C24C7807300D17A15 /* ImageListCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		1951EA8524C891CF00D17A15 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1951EA8324C891BF00D17A15 /* UIView+constraint.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -209,7 +228,7 @@
 			);
 			name = ImageImgur;
 			packageProductDependencies = (
-				1951EA6B24C6457C00D17A15 /* MySPM */,
+				1951EA8124C85C4400D17A15 /* Nuke */,
 			);
 			productName = ImageImgur;
 			productReference = 1951EA3024C6408600D17A15 /* ImageImgur.app */;
@@ -262,7 +281,7 @@
 			);
 			mainGroup = 1951EA2724C6408600D17A15;
 			packageReferences = (
-				1951EA6A24C6457C00D17A15 /* XCRemoteSwiftPackageReference "MySPM" */,
+				1951EA8024C85C4400D17A15 /* XCRemoteSwiftPackageReference "Nuke" */,
 			);
 			productRefGroup = 1951EA3124C6408600D17A15 /* Products */;
 			projectDirPath = "";
@@ -300,6 +319,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1951EA7124C711A200D17A15 /* ImageListViewModel.swift in Sources */,
+				1951EA8424C891BF00D17A15 /* UIView+constraint.swift in Sources */,
+				1951EA7D24C7807300D17A15 /* ImageListCell.swift in Sources */,
 				1951EA5924C6411B00D17A15 /* ImageListVC.swift in Sources */,
 				1951EA5F24C6432B00D17A15 /* Image.swift in Sources */,
 				1951EA7824C7323B00D17A15 /* ImageDataList.swift in Sources */,
@@ -310,7 +331,6 @@
 				1951EA6224C6436400D17A15 /* APICalling.swift in Sources */,
 				1951EA5D24C6431B00D17A15 /* ImageData.swift in Sources */,
 				1951EA6424C6437E00D17A15 /* APIRequest.swift in Sources */,
-				1951EA3624C6408600D17A15 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,21 +597,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		1951EA6A24C6457C00D17A15 /* XCRemoteSwiftPackageReference "MySPM" */ = {
+		1951EA8024C85C4400D17A15 /* XCRemoteSwiftPackageReference "Nuke" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/asfcarvalho/MySPM";
+			repositoryURL = "https://github.com/kean/Nuke.git";
 			requirement = {
-				branch = master;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.1.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		1951EA6B24C6457C00D17A15 /* MySPM */ = {
+		1951EA8124C85C4400D17A15 /* Nuke */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1951EA6A24C6457C00D17A15 /* XCRemoteSwiftPackageReference "MySPM" */;
-			productName = MySPM;
+			package = 1951EA8024C85C4400D17A15 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
