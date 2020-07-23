@@ -20,7 +20,7 @@ class ImageListVC: UIViewController {
     private let imageListViewModel = ImageListViewModel()
     private let cellName = "cell"
     private let cellWidth = (UIScreen.main.bounds.width * 0.5)
-    
+
     private lazy var collectionView: UICollectionView = {
         let layoutCollection = UICollectionViewFlowLayout()
         layoutCollection.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
@@ -40,6 +40,7 @@ class ImageListVC: UIViewController {
     }
     
     private func setupCollectionView() {
+        
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.register(ImageListCell.self, forCellWithReuseIdentifier: cellName)
@@ -71,7 +72,9 @@ class ImageListVC: UIViewController {
                     self?.collectionView.reloadData()
                 }
             } else {
-                print("DO ALERT")
+                DispatchQueue.main.async {
+                    AlertCustom.showAlert(from: self, title: "Attemption", message: "Error on loading Image Gallery")
+                }
             }
         }
     }

@@ -25,6 +25,7 @@
 		1951EA7D24C7807300D17A15 /* ImageListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1951EA7C24C7807300D17A15 /* ImageListCell.swift */; };
 		1951EA8224C85C4400D17A15 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 1951EA8124C85C4400D17A15 /* Nuke */; };
 		1951EA8424C891BF00D17A15 /* UIView+constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1951EA8324C891BF00D17A15 /* UIView+constraint.swift */; };
+		1951EA8F24C9B84800D17A15 /* UIAlert+custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1951EA8E24C9B84800D17A15 /* UIAlert+custom.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		1951EA7724C7323B00D17A15 /* ImageDataList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDataList.swift; sourceTree = "<group>"; };
 		1951EA7C24C7807300D17A15 /* ImageListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListCell.swift; sourceTree = "<group>"; };
 		1951EA8324C891BF00D17A15 /* UIView+constraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+constraint.swift"; sourceTree = "<group>"; };
+		1951EA8E24C9B84800D17A15 /* UIAlert+custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlert+custom.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				1951EA8324C891BF00D17A15 /* UIView+constraint.swift */,
+				1951EA8E24C9B84800D17A15 /* UIAlert+custom.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 				1951EA7824C7323B00D17A15 /* ImageDataList.swift in Sources */,
 				1951EA3824C6408600D17A15 /* ViewController.swift in Sources */,
 				1951EA7424C7169B00D17A15 /* ImageListDataSource.swift in Sources */,
+				1951EA8F24C9B84800D17A15 /* UIAlert+custom.swift in Sources */,
 				1951EA7624C72A5A00D17A15 /* APIStringsDefault.swift in Sources */,
 				1951EA3424C6408600D17A15 /* AppDelegate.swift in Sources */,
 				1951EA6224C6436400D17A15 /* APICalling.swift in Sources */,
